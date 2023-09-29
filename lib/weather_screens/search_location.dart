@@ -4,8 +4,8 @@ import 'package:weather_s/view_model/theme_provider.dart';
 import 'package:weather_s/view_model/weather_provider.dart';
 import 'package:weather_s/widgets/imgae_wid.dart';
 
-class SecondScreen extends StatelessWidget {
-  SecondScreen({super.key});
+class SearchLocation extends StatelessWidget {
+  SearchLocation({super.key});
   final locatincontroller = TextEditingController();
   @override
   Widget build(BuildContext context) {

@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:weather_s/view_model/theme_provider.dart';
 import 'package:weather_s/view_model/weather_provider.dart';
-import 'package:weather_s/weather_screens/fetch_full_data.dart';
-import 'package:weather_s/weather_screens/second_page.dart';
+import 'package:weather_s/weather_screens/seel_all_data.dart';
+import 'package:weather_s/weather_screens/search_location.dart';
 import 'package:weather_s/widgets/imgae_wid.dart';
 
-class FirstPage extends StatelessWidget {
-  const FirstPage({super.key});
+class Home extends StatelessWidget {
+  const Home({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -373,7 +373,7 @@ class FirstPage extends StatelessWidget {
                   Navigator.of(context).push(
                     PageRouteBuilder(
                       pageBuilder: (context, animation, secondaryAnimation) {
-                        return SecondScreen();
+                        return SearchLocation();
                       },
                       transitionsBuilder:
                           (context, animation, secondaryAnimation, child) {

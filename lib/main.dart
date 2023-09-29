@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:provider/provider.dart';
 import 'package:weather_s/view_model/theme_provider.dart';
-import 'package:weather_s/weather_screens/first_page.dart';
+import 'package:weather_s/weather_screens/home.dart';
 import 'view_model/weather_provider.dart';
 
 void main() async {
@@ -33,7 +33,7 @@ class MyWeatherApp extends StatelessWidget {
             colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
             useMaterial3: true,
           ),
-          home: const FirstPage(),
+          home: const Home(),
         ));
   }
 }
